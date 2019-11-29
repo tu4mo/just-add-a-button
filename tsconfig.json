@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "jsx": "react",
+    "module": "es6",
+    "noImplicitAny": true,
+    "outDir": "./dist/",
+    "target": "es5"
+  }
+}
