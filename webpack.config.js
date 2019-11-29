@@ -16,6 +16,9 @@ module.exports = {
       }
     ]
   },
+  output: {
+    path: path.resolve(__dirname, "docs")
+  },
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
