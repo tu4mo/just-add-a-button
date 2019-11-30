@@ -1,10 +1,9 @@
 import React from "react";
 import styled from "styled-components";
+import { css } from "emotion";
 import { useTranslation } from "react-i18next";
 
 const StyledButton = styled.button`
-  background-color: #21d4fd;
-  background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);
   box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
   border: 0;
   border-radius: 0.5rem;
@@ -23,7 +22,16 @@ const StyledButton = styled.button`
 
 const Button = () => {
   const { t } = useTranslation();
-  return <StyledButton>{t("clickMe")}</StyledButton>;
+  return (
+    <StyledButton
+      className={css`
+        background-color: #21d4fd;
+        background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);
+      `}
+    >
+      {t("clickMe")}
+    </StyledButton>
+  );
 };
 
 export default Button;

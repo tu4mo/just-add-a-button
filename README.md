@@ -4,6 +4,6 @@ Technologies used:
 
 - React with TypeScript
 - webpack with lazy-loading of button-component
-- styled-components to style the button
+- styled-components and emotion for styling
 - Google Fonts for a web font
-- Button is localized with react-i18next
+- Localized with react-i18next
