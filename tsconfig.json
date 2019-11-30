@@ -2,7 +2,7 @@
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
     "jsx": "react",
-    "module": "es6",
+    "module": "esnext",
     "noImplicitAny": true,
     "outDir": "./dist/",
     "target": "es5"

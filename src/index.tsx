@@ -1,5 +1,7 @@
-import React from "react";
+import React, { Suspense } from "react";
 import ReactDOM from "react-dom";
+
+const Button = React.lazy(() => import("./Button"));
 
 const App = () => (
   <div
@@ -10,7 +12,9 @@ const App = () => (
       justifyContent: "center"
     }}
   >
-    <button>Click me!</button>
+    <Suspense fallback="Loading…">
+      <Button />
+    </Suspense>
   </div>
 );
 
