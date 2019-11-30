@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { useTranslation } from "react-i18next";
 
 const StyledButton = styled.button`
   background-color: #21d4fd;
@@ -20,6 +21,9 @@ const StyledButton = styled.button`
   }
 `;
 
-const Button = () => <StyledButton>Click me!</StyledButton>;
+const Button = () => {
+  const { t } = useTranslation();
+  return <StyledButton>{t("clickMe")}</StyledButton>;
+};
 
 export default Button;

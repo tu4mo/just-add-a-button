@@ -1,23 +1,8 @@
-import React, { Suspense } from "react";
+import React from "react";
 import ReactDOM from "react-dom";
 
-const Button = React.lazy(() =>
-  import(/* webpackChunkName: "Button" */ "./Button")
-);
+import "./i18n";
 
-const App = () => (
-  <div
-    style={{
-      height: "100vh",
-      display: "flex",
-      alignItems: "center",
-      justifyContent: "center"
-    }}
-  >
-    <Suspense fallback="Loading…">
-      <Button />
-    </Suspense>
-  </div>
-);
+import App from "./App";
 
 ReactDOM.render(<App />, document.getElementById("root"));
