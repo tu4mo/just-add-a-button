@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[0],{8:function(n,e,t){"use strict";t.r(e);var u=t(0),c=t.n(u);e.default=function(){return c.a.createElement("button",null,"Click me!")}}}]);

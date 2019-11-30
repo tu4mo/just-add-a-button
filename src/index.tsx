@@ -1,7 +1,9 @@
 import React, { Suspense } from "react";
 import ReactDOM from "react-dom";
 
-const Button = React.lazy(() => import("./Button"));
+const Button = React.lazy(() =>
+  import(/* webpackChunkName: "Button" */ "./Button")
+);
 
 const App = () => (
   <div
