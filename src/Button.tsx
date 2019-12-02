@@ -3,9 +3,10 @@ import styled from "styled-components";
 import { css } from "emotion";
 import { useTranslation } from "react-i18next";
 import cc from "classcat";
+import { useDispatch, useSelector } from "react-redux";
+import { click } from "./store";
 
 import styles from "./Button.module.css";
-console.log(styles);
 
 const StyledButton = styled.button`
   box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
@@ -24,6 +25,9 @@ const StyledButton = styled.button`
 
 const Button = () => {
   const { t } = useTranslation();
+  const buttonClicked = useSelector(state => state);
+  const dispatch = useDispatch();
+
   return (
     <StyledButton
       className={cc([
@@ -33,8 +37,9 @@ const Button = () => {
           background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);
         `
       ])}
+      onClick={() => dispatch(click())}
     >
-      {t("clickMe")}
+      {t(buttonClicked ? "clicked" : "clickMe")}
     </StyledButton>
   );
 };

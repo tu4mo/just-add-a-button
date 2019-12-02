@@ -1,3 +1,4 @@
 {
-  "clickMe": "Click Me!"
+  "clickMe": "Click Me!",
+  "clicked": "Clicked"
 }
