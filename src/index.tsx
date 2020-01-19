@@ -6,6 +6,7 @@ import "./i18n";
 import store from "./store";
 
 import App from "./App";
+import "./styles.css";
 
 ReactDOM.render(
   <Provider store={store}>

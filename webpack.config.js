@@ -19,7 +19,23 @@ module.exports = {
               modules: true
             }
           }
-        ]
+        ],
+        include: /\.module\.css$/
+      },
+      {
+        test: /\.css$/i,
+        use: [
+          "style-loader",
+          "css-loader",
+          {
+            loader: "postcss-loader",
+            options: {
+              ident: "postcss",
+              plugins: [require("tailwindcss"), require("autoprefixer")]
+            }
+          }
+        ],
+        exclude: /\.module\.css$/
       },
       {
         test: /\.tsx?$/,

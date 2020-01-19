@@ -11,7 +11,6 @@ import styles from "./Button.module.css";
 const StyledButton = styled.button`
   box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
   border: 0;
-  border-radius: 0.5rem;
   color: #fff;
   outline: none;
   padding: 1rem 2rem;
@@ -35,7 +34,8 @@ const Button = () => {
         css`
           background-color: #21d4fd;
           background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);
-        `
+        `,
+        "rounded-lg"
       ])}
       onClick={() => dispatch(click())}
     >
