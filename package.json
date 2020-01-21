@@ -20,7 +20,7 @@
   "homepage": "https://github.com/tu4mo/just-a-button#readme",
   "devDependencies": {
     "@types/react": "^16.9.17",
-    "@types/react-dom": "^16.9.4",
+    "@types/react-dom": "^16.9.5",
     "@types/react-redux": "^7.1.5",
     "@types/styled-components": "^4.4.2",
     "clean-webpack-plugin": "^3.0.0",
