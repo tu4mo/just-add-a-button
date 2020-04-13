@@ -9,8 +9,8 @@ import { click } from "./store";
 import styles from "./Button.module.css";
 
 const StyledButton = styled.button`
-  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
   border: 0;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
   color: #fff;
   outline: none;
   padding: 1rem 2rem;
@@ -24,7 +24,7 @@ const StyledButton = styled.button`
 
 const Button = () => {
   const { t } = useTranslation();
-  const buttonClicked = useSelector(state => state);
+  const buttonClicked = useSelector((state) => state);
   const dispatch = useDispatch();
 
   return (
@@ -35,7 +35,7 @@ const Button = () => {
           background-color: #21d4fd;
           background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);
         `,
-        "rounded-lg"
+        "rounded-lg",
       ])}
       onClick={() => dispatch(click())}
     >
