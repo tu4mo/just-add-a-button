@@ -11,3 +11,7 @@ Technologies used:
 - stylelint with:
   - configs: recommended, prettier, styled-components
   - plugins: order
+
+## What is this, really?
+
+It's my personal playground for trying out old and new stuff. No remove, only add! 😠
