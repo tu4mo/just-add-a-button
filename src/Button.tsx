@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useCallback } from "react";
 import styled from "styled-components";
 import { css } from "emotion";
 import { useTranslation } from "react-i18next";
 import cc from "classcat";
 import { useDispatch, useSelector } from "react-redux";
-import { click } from "./store";
+import { useRecoilState } from "recoil";
 
+import { click } from "./store";
+import { counterState } from "./recoil";
 import styles from "./Button.module.css";
 
 const StyledButton = styled.button`
@@ -24,8 +26,16 @@ const StyledButton = styled.button`
 
 const Button = () => {
   const { t } = useTranslation();
+
   const buttonClicked = useSelector((state) => state);
   const dispatch = useDispatch();
+
+  const [count, setCount] = useRecoilState(counterState);
+
+  const onClick = useCallback(() => {
+    dispatch(click());
+    setCount((count) => count + 1);
+  }, []);
 
   return (
     <StyledButton
@@ -37,9 +47,10 @@ const Button = () => {
         `,
         "rounded-lg",
       ])}
-      onClick={() => dispatch(click())}
+      onClick={onClick}
     >
       {t(buttonClicked ? "clicked" : "clickMe")}
+      {buttonClicked ? ` ${count} times` : null}
     </StyledButton>
   );
 };
