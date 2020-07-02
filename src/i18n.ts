@@ -4,12 +4,12 @@ import { initReactI18next } from "react-i18next";
 import translation from "./translation.json";
 
 const resources = {
-  en: { translation }
+  en: { translation },
 };
 
 i18n.use(initReactI18next).init({
   lng: "en",
-  resources
+  resources,
 });
 
 export default i18n;

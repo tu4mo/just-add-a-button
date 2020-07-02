@@ -6,12 +6,12 @@ const buttonSlice = createSlice({
   reducers: {
     click() {
       return true;
-    }
-  }
+    },
+  },
 });
 
 const store = configureStore({
-  reducer: buttonSlice.reducer
+  reducer: buttonSlice.reducer,
 });
 
 export const { click } = buttonSlice.actions;

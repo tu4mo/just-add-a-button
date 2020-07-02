@@ -17,11 +17,11 @@ module.exports = {
           {
             loader: "css-loader",
             options: {
-              modules: true
-            }
-          }
+              modules: true,
+            },
+          },
         ],
-        include: /\.module\.css$/
+        include: /\.module\.css$/,
       },
       {
         test: /\.css$/i,
@@ -32,32 +32,32 @@ module.exports = {
             loader: "postcss-loader",
             options: {
               ident: "postcss",
-              plugins: [require("tailwindcss"), require("autoprefixer")]
-            }
-          }
+              plugins: [require("tailwindcss"), require("autoprefixer")],
+            },
+          },
         ],
-        exclude: /\.module\.css$/
+        exclude: /\.module\.css$/,
       },
       {
         test: /\.tsx?$/,
         use: "ts-loader",
-        exclude: /node_modules/
-      }
-    ]
+        exclude: /node_modules/,
+      },
+    ],
   },
   output: {
-    path: path.resolve(__dirname, "docs")
+    path: path.resolve(__dirname, "docs"),
   },
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       filename: "index.html",
       inject: "body",
-      template: path.join(__dirname, "/src/index.html")
+      template: path.join(__dirname, "/src/index.html"),
     }),
-    new CopyPlugin(["static"])
+    new CopyPlugin(["static"]),
   ],
   resolve: {
-    extensions: [".js", ".tsx", ".ts"]
-  }
+    extensions: [".js", ".tsx", ".ts"],
+  },
 };
