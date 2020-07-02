@@ -55,7 +55,7 @@ module.exports = {
       inject: "body",
       template: path.join(__dirname, "/src/index.html"),
     }),
-    new CopyPlugin(["static"]),
+    new CopyPlugin({ patterns: [{ from: "static" }] }),
   ],
   resolve: {
     extensions: [".js", ".tsx", ".ts"],
