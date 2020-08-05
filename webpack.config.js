@@ -16,9 +16,6 @@ module.exports = {
           "style-loader",
           {
             loader: "css-loader",
-            options: {
-              modules: true,
-            },
           },
         ],
         include: /\.module\.css$/,

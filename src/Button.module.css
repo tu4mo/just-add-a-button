@@ -2,3 +2,7 @@
   font-family: "Dosis", sans-serif;
   font-size: 2rem;
 }
+
+.button:focus {
+  outline: none;
+}
