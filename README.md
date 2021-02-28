@@ -12,6 +12,7 @@ Technologies used:
 - stylelint with:
   - configs: recommended, prettier, styled-components
   - plugins: order
+- commitlint to enforce conventional commit messages
 - Github Actions for deployment
 
 ## What is this, really?
