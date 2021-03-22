@@ -9,6 +9,7 @@ Technologies used:
 - Localized with react-i18next
 - Redux Toolkit to change button clicked state
 - Recoil to change button click count
+- Valtio to flip background color
 - stylelint with:
   - configs: recommended, prettier, styled-components
   - plugins: order

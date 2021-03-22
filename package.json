@@ -62,7 +62,8 @@
     "react-redux": "^7.2.1",
     "recoil": "^0.1.2",
     "styled-components": "^5.1.1",
-    "tailwindcss": "^2.0.2"
+    "tailwindcss": "^2.0.2",
+    "valtio": "^1.0.0"
   },
   "husky": {
     "hooks": {

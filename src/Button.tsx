@@ -9,6 +9,7 @@ import { useRecoilState } from "recoil";
 import { click } from "./store";
 import { counterState } from "./recoil";
 import styles from "./Button.module.css";
+import { state } from "./valtio";
 
 const StyledButton = styled.button`
   border: 0;
@@ -35,6 +36,7 @@ const Button = () => {
   const onClick = useCallback(() => {
     dispatch(click());
     setCount((count) => count + 1);
+    state.backgroundFlipped = !state.backgroundFlipped;
   }, []);
 
   return (
