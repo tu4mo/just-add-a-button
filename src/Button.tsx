@@ -1,6 +1,6 @@
 import React, { useCallback } from "react";
 import styled from "styled-components";
-import { css } from "emotion";
+import { css } from "@emotion/css";
 import { useTranslation } from "react-i18next";
 import cc from "classcat";
 import { useDispatch, useSelector } from "react-redux";
