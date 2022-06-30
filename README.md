@@ -14,6 +14,8 @@ Technologies used:
   - configs: recommended, prettier, styled-components
   - plugins: order
 - commitlint to enforce conventional commit messages
+- Prettier to enforce code style
+- prettier-package-json to clean up package.json
 - Github Actions for deployment
 
 ## What is this, really?
