@@ -5,6 +5,7 @@
   ],
   "packageRules": [
     {
+      "groupName": "devDependencies (non-major)",
       "matchUpdateTypes": ["patch"],
       "automerge": true
     }
