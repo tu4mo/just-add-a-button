@@ -9,6 +9,5 @@
     "outDir": "./dist/",
     "resolveJsonModule": true,
     "target": "es6",
-    "types": ["react/experimental", "react-dom/experimental"]
   }
 }
