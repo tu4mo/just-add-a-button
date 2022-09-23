@@ -16,11 +16,13 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 16
+          cache: "npm"
 
-      - name: Install and Build
-        run: |
-          npm install
-          npm run build
+      - name: Install
+        run: npm ci
+
+      - name: Build
+        run: npm run build
 
       - name: Lint styles
         run: npm run lint:styles
