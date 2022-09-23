@@ -22,6 +22,9 @@ jobs:
           npm install
           npm run build
 
+      - name: Lint styles
+        run: npm run lint:styles
+
       - name: Deploy to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v2
         with:
