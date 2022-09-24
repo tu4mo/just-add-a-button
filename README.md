@@ -16,7 +16,8 @@ Technologies used:
 - commitlint to enforce conventional commit messages
 - Prettier to enforce code style
 - prettier-package-json to clean up package.json
-- Github Actions for deployment
+- Github Actions for CI and deployment
+- Renovate to keep dependencies up-to-date
 
 ## What is this, really?
 
