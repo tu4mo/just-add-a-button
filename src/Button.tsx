@@ -13,13 +13,13 @@ import { state } from "./valtio";
 
 const StyledButton = styled.button`
   border: 0;
-  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 2rem rgba(0 0 0 / 20%);
   color: #fff;
   outline: none;
   padding: 1rem 2rem;
 
   &:active {
-    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 0.5rem rgba(0 0 0 / 30%);
     opacity: 0.9;
     transform: scale(0.96);
   }
