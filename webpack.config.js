@@ -48,8 +48,6 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      filename: "index.html",
-      inject: "body",
       template: path.join(__dirname, "/src/index.html"),
     }),
     new CopyPlugin({ patterns: [{ from: "static" }] }),
