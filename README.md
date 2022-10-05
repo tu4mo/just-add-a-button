@@ -2,7 +2,9 @@
 
 Technologies used:
 
-- React with TypeScript
+- TypeScript
+- React
+- React Router
 - webpack with lazy-loading of button-component
 - styled-components, emotion, CSS Modules and Tailwind CSS for styling
 - Google Fonts for a web font
