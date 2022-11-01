@@ -51,8 +51,10 @@ const Button = () => {
       ])}
       onClick={onClick}
     >
-      {t(buttonClicked ? "clicked" : "clickMe")}
-      {buttonClicked ? ` ${count} times` : null}
+      <>
+        {t(buttonClicked ? "clicked" : "clickMe")}
+        {buttonClicked ? ` ${count} times` : null}
+      </>
     </StyledButton>
   );
 };
