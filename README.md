@@ -13,7 +13,7 @@ Technologies used:
 - Recoil to change button click count
 - Valtio to flip background color
 - stylelint with:
-  - configs: recommended, prettier, styled-components
+  - configs: recommended, styled-components
   - plugins: order
 - commitlint to enforce conventional commit messages
 - Prettier to enforce code style
