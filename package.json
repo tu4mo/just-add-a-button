@@ -46,7 +46,7 @@
     "copy-webpack-plugin": "11.0.0",
     "cross-env": "7.0.3",
     "css-loader": "6.7.4",
-    "html-webpack-plugin": "5.5.2",
+    "html-webpack-plugin": "5.5.3",
     "husky": "4.3.8",
     "lint-staged": "13.2.2",
     "postcss": "8.4.24",
