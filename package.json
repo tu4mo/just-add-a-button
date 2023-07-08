@@ -54,7 +54,7 @@
     "prettier": "2.8.8",
     "prettier-package-json": "2.8.0",
     "style-loader": "3.3.3",
-    "stylelint": "14.16.1",
+    "stylelint": "15.10.1",
     "stylelint-config-standard": "29.0.0",
     "stylelint-config-styled-components": "0.1.1",
     "stylelint-order": "6.0.3",
