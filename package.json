@@ -60,7 +60,7 @@
     "stylelint-order": "6.0.3",
     "stylelint-processor-styled-components": "1.10.0",
     "ts-loader": "9.4.4",
-    "typescript": "5.1.6",
+    "typescript": "5.2.2",
     "webpack": "5.88.2",
     "webpack-cli": "5.0.2",
     "webpack-dev-server": "4.15.1"
