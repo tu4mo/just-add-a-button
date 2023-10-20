@@ -36,8 +36,8 @@
     "valtio": "^1.0.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "17.7.2",
-    "@commitlint/config-conventional": "17.7.0",
+    "@commitlint/cli": "18.0.0",
+    "@commitlint/config-conventional": "18.0.0",
     "@types/react": "18.2.31",
     "@types/react-dom": "18.2.14",
     "@types/styled-components": "5.1.29",
