@@ -47,7 +47,7 @@
     "cross-env": "7.0.3",
     "css-loader": "6.8.1",
     "html-webpack-plugin": "5.5.4",
-    "husky": "4.3.8",
+    "husky": "8.0.3",
     "lint-staged": "15.2.0",
     "postcss": "8.4.32",
     "postcss-loader": "7.3.3",
