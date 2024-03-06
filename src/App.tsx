@@ -1,8 +1,8 @@
-import React, { Suspense } from "react";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import React from "react";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 import { View } from "./View";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <View />,
