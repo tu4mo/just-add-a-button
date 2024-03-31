@@ -50,7 +50,7 @@
     "husky": "4.3.8",
     "lint-staged": "15.2.2",
     "postcss": "8.4.38",
-    "postcss-loader": "7.3.4",
+    "postcss-loader": "8.1.1",
     "prettier": "3.2.5",
     "prettier-package-json": "2.8.0",
     "style-loader": "3.3.4",
